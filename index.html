@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cotizá tu plan Premedic: mirá dónde te atendés antes de elegir</title>
+<meta name="description" content="Cotizá Premedic por WhatsApp y mirá antes dónde te atendés: más de 100 clínicas y sanatorios, 400 centros médicos y 2.500 profesionales en CABA, Buenos Aires, Córdoba, Tucumán, Misiones y Mendoza. Una asesora te pasa el precio en minutos.">
+<link rel="canonical" href="https://cotizapremedic.com.ar/">
+<link rel="icon" type="image/png" href="logo-arbol.png">
+<link rel="apple-touch-icon" href="logo-arbol.png">
+<meta property="og:title" content="Cotizá Premedic: mirá dónde te atendés antes de elegir tu plan">
+<meta property="og:description" content="Sanatorios de primera línea, centros médicos propios y médico por videollamada las 24 h. Cotizá tu plan por WhatsApp: una asesora te pasa el precio en minutos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cotizapremedic.com.ar/">
+<meta property="og:locale" content="es_AR">
+<meta property="og:image" content="https://cotizapremedic.com.ar/v23072.jpg">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "Cotizá Premedic · Agencia Comercial Oficial de Grupo Premedic",
+  "url": "https://cotizapremedic.com.ar/",
+  "logo": "https://cotizapremedic.com.ar/logo-arbol.png",
+  "areaServed": ["CABA", "Buenos Aires", "Córdoba", "Tucumán", "Misiones", "Mendoza"],
+  "description": "Cotización de los planes de Premedic Medicina Privada por WhatsApp, con la red de sanatorios, centros médicos propios y telemedicina las 24 horas para ver dónde te atendés antes de elegir.",
+  "knowsAbout": ["medicina prepaga", "cotización de planes de salud", "sanatorios", "centros médicos"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿La cartilla de Premedic depende del plan?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Todos los planes acceden a la red de centros médicos y clínicas; el plan 300 suma prestadores como Sanatorio de la Trinidad, Finochietto, Las Lomas, Bazterrica y CEMIC, y el 400 suma Hospital Británico, Hospital Alemán, ICBA, Sanatorio San Lucas y Clínica Angelus."}},
+    {"@type": "Question", "name": "¿En qué provincias tiene cartilla Premedic?", "acceptedAnswer": {"@type": "Answer", "text": "En CABA, provincia de Buenos Aires, Córdoba, Tucumán, Misiones y Mendoza."}},
+    {"@type": "Question", "name": "¿Necesito credencial física para atenderme?", "acceptedAnswer": {"@type": "Answer", "text": "No. La app Premedic Móvil tiene la credencial virtual: con ella te atendés en todos los prestadores, pedís turnos y autorizás órdenes."}},
+    {"@type": "Question", "name": "¿Qué pasa si me enfermo de madrugada o de viaje?", "acceptedAnswer": {"@type": "Answer", "text": "Tenés médico por chat o videollamada las 24 horas, los 365 días, sin cargo, y asistencia al viajero de Cardinal Assistance en el país y países limítrofes."}},
+    {"@type": "Question", "name": "¿Cómo cotizo mi plan y veo los prestadores de mi zona?", "acceptedAnswer": {"@type": "Answer", "text": "Escribinos por WhatsApp con tu localidad y una asesora te pasa el precio de cada plan para tu grupo familiar y los prestadores de tu zona, en minutos."}}
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#ffffff;
+  --panel:#EAF7F6;
+  --panel2:#D9F1F0;
+  --ink:#077B7A;
+  --texto:#2F6D6B;
+  --accent:#10A6A4;
+  --accent-ink:#ffffff;
+  --verde:#6ABD6E;
+  --wa:#25D366;
+  --oscuro:#065B5A;
+  --oscuro-ink:#F2FAF9;
+  --r:16px;
+  --m:16px;
+  --axis:42%;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--texto);font-family:'Satoshi',Arial,sans-serif;font-size:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);line-height:1.5;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+::selection{background:var(--accent);color:#fff}
+h1,h2,h3{color:var(--ink);font-weight:700;letter-spacing:-0.02em;line-height:1}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ====== botones ====== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-family:'Satoshi',sans-serif;font-weight:700;font-size:17px;text-decoration:none;padding:13px 26px;min-height:48px;border:none;cursor:pointer;border-radius:15px;transition:transform .2s,background .2s}
+.btn:hover{background:var(--ink);transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#073B2A}
+.btn-wa:hover{background:#30e676}
+.btn-wa svg{width:22px;height:22px;fill:currentColor;flex-shrink:0}
+.fab{position:fixed;right:18px;bottom:18px;z-index:50;width:62px;height:62px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(6,91,90,.25);transition:transform .2s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:34px;height:34px;fill:#fff}
+
+/* ====== header ====== */
+.header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--m);max-width:1280px;margin:0 auto}
+.header .marca{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px;color:var(--ink);letter-spacing:-0.01em;text-decoration:none}
+.header .marca img{width:40px;height:40px}
+.header .marca small{display:block;font-weight:500;font-size:13px;letter-spacing:.04em;color:var(--texto)}
+.header nav{display:flex;align-items:center;gap:26px}
+.header nav a{font-size:16px;font-weight:500;color:var(--ink);text-decoration:none}
+.header nav a:hover{text-decoration:underline}
+
+/* ====== masthead mosaico ====== */
+.mast{height:48svh;min-height:340px;display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:1fr 1fr;grid-auto-flow:dense;gap:10px;padding:10px 12px 0;max-width:1280px;margin:0 auto}
+.mast > *{min-height:0;overflow:hidden;border-radius:var(--r)}
+.mast img,.mast video{width:100%;height:100%;object-fit:cover}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.09)}}
+.mast .kb img{animation:kb 16s ease-in-out infinite alternate}
+.mast .kb:nth-child(odd) img{animation-delay:-8s}
+@media (prefers-reduced-motion:reduce){.mast .kb img{animation:none}}
+.t-accent{background:var(--accent)}
+.t-panel{background:var(--panel2)}
+.t-verde{background:var(--verde)}
+.t-lito{background:var(--panel2);display:flex;align-items:center;justify-content:center}
+.t-lito img{width:54%;height:auto;object-fit:contain}
+.span2c{grid-column:span 2}
+.span2r{grid-row:span 2}
+
+/* ====== título sobre el eje ====== */
+.portada{position:relative;padding:64px var(--m) 100px;max-width:1280px;margin:0 auto}
+.portada .standfirst{position:absolute;left:var(--m);top:80px;max-width:30ch;font-size:19px}
+.portada h1{margin-left:var(--axis);font-size:clamp(56px,7.6vw,116px);letter-spacing:-0.04em;line-height:.92}
+.portada h1 .ln{display:block;overflow:hidden}
+.portada h1 .ln span{display:block;transform:translateY(112%);animation:rise .9s cubic-bezier(.16,.84,.26,1) forwards}
+.portada h1 .ln:nth-child(2) span{animation-delay:.11s}
+@keyframes rise{to{transform:none}}
+@media (prefers-reduced-motion:reduce){.portada h1 .ln span{transform:none;animation:none}}
+.portada .baja{margin-left:var(--axis);margin-top:24px;font-size:20px;max-width:44ch}
+.portada .baja .btn{margin-top:22px}
+
+/* ====== showcase: una imagen cortada en tiles ====== */
+.board{padding:0 12px;max-width:1280px;margin:0 auto}
+.board h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.board-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.board-grid .cel{aspect-ratio:1;background-image:var(--foto);background-size:600% 400%;border-radius:var(--r);overflow:hidden}
+.board-grid .flat{aspect-ratio:1;padding:16px;display:flex;flex-direction:column;justify-content:flex-start;border-radius:var(--r)}
+.board-grid .flat.heading{background:var(--accent);color:#fff;font-size:clamp(20px,2.4vw,30px);font-weight:700;line-height:1.1;letter-spacing:-0.02em}
+.board-grid .flat.dato{background:var(--panel2)}
+.board-grid .flat.dato b{color:var(--ink);font-size:clamp(24px,2.6vw,36px);font-weight:900;letter-spacing:-0.02em}
+.board-grid .flat.dato span{font-size:15px;margin-top:6px}
+.board-grid .flat.accion{background:var(--verde);color:#063F2E;justify-content:center}
+.board-grid .flat.accion a{font-size:18px;font-weight:700}
+
+/* ====== proof: nombres en columnas + filtro por plan (live) ====== */
+.nombres{padding:120px var(--m);display:grid;grid-template-columns:calc(var(--axis) - var(--m)) 1fr;gap:0 32px;max-width:1280px;margin:0 auto}
+.nombres .lado h2{font-size:clamp(30px,3vw,40px)}
+.nombres .lado p{font-size:16px;max-width:26ch;margin-top:14px}
+.filtros{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.filtros button{font-family:'Satoshi',sans-serif;font-weight:700;font-size:16px;border:2px solid var(--accent);background:#fff;color:var(--ink);padding:10px 18px;min-height:44px;cursor:pointer;border-radius:15px}
+.filtros button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.cols{columns:3;column-gap:32px}
+.cols .kind{break-inside:avoid;margin-bottom:34px}
+.cols .kind > span{display:block;font-size:16px;font-weight:700;line-height:1.5;color:var(--texto)}
+.cols .kind b{display:block;color:var(--ink);font-weight:500;font-size:20px;line-height:1.55;transition:opacity .3s}
+.cols .kind b.off{opacity:.22}
+.cols .kind b em{font-style:normal;font-size:15px;color:var(--texto)}
+
+/* ====== mosaico de tiles desiguales ====== */
+.mosaico{padding:0 12px 120px;max-width:1280px;margin:0 auto}
+.mz{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:96px;gap:10px}
+.mz > *{overflow:hidden;border-radius:var(--r)}
+.mz .tile{padding:24px;display:flex;flex-direction:column;justify-content:flex-start}
+.mz h2{font-size:clamp(32px,3.6vw,50px);letter-spacing:-0.03em}
+.mz .t-head{grid-column:span 6;grid-row:span 3;background:var(--panel)}
+.mz .t-head p{margin-top:12px;max-width:40ch}
+.mz .t-video{grid-column:span 6;grid-row:span 5;background:var(--panel2)}
+.mz .t-video video{width:100%;height:100%;object-fit:cover}
+.mz .t-fig{grid-column:span 3;grid-row:span 3;background:var(--ink);color:#fff}
+.mz .t-fig b{font-size:clamp(40px,5.4vw,78px);font-weight:900;letter-spacing:-0.03em;line-height:1}
+.mz .t-fig span{font-size:16px;margin-top:8px}
+.mz .t-lista{grid-column:span 3;grid-row:span 3;background:var(--oscuro);color:var(--oscuro-ink)}
+.mz .t-lista p{font-size:17px;line-height:1.6}
+.mz .t-frase{grid-column:span 6;grid-row:span 3;background:var(--panel)}
+.mz .t-frase p{color:var(--ink);font-size:clamp(21px,2vw,27px);font-weight:700;line-height:1.25;letter-spacing:-0.01em;max-width:22ch}
+.mz .t-frase.inv{background:var(--verde)}
+.mz .t-frase.inv p{color:#063F2E}
+
+/* ====== provincias (tabs + bandas) ====== */
+.prov{padding:0 var(--m) 120px;max-width:1280px;margin:0 auto}
+.prov .cab{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.prov h2{font-size:clamp(32px,3.6vw,52px)}
+.prov h2 .suave{color:var(--accent);display:block}
+.prov .zona{display:grid;grid-template-columns:160px 1fr;gap:0 40px;margin-top:52px}
+.tabs{display:flex;flex-direction:column;gap:8px}
+.tabs button{font-family:'Satoshi',sans-serif;width:160px;height:62px;border:none;cursor:pointer;background:var(--panel);color:var(--ink);text-align:left;padding:0 16px;font-size:17px;font-weight:700;border-radius:12px}
+.tabs button small{display:block;font-size:13px;font-weight:500;color:var(--texto)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:#fff}
+.tabs button[aria-selected="true"] small{color:#EAF7F6}
+.bandas .banda{display:grid;grid-template-columns:170px 1fr;align-items:center;min-height:74px;padding:14px 20px;gap:16px;margin-bottom:8px;border-radius:12px}
+.bandas .banda:nth-child(odd){background:var(--panel)}
+.bandas .banda:nth-child(even){background:var(--panel2)}
+.bandas .banda b{color:var(--oscuro);font-size:17px;font-weight:700}
+.bandas .banda p{font-size:16px}
+.bandas .banda a{color:var(--oscuro);font-weight:700}
+
+/* ====== faq bandas ====== */
+.faq{max-width:1280px;margin:0 auto;padding:0 12px}
+.faq h2{background:var(--panel2);border-radius:var(--r);min-height:34svh;display:flex;align-items:flex-end;padding:24px;font-size:clamp(40px,5.6vw,84px);letter-spacing:-0.03em}
+.faq .banda{display:grid;grid-template-columns:5fr 1fr 6fr;padding:48px 24px;border-radius:var(--r);margin-top:10px}
+.faq .banda:nth-child(odd){background:var(--panel)}
+.faq .banda h3{font-size:clamp(23px,2.2vw,30px);font-weight:700;letter-spacing:-0.02em;max-width:18ch}
+.faq .banda p{font-size:18px;max-width:52ch}
+
+/* ====== cta invertido ====== */
+.cierre{background:linear-gradient(135deg,#065B5A 0%,#077B7A 55%,#10A6A4 100%);color:#fff;border-radius:var(--r);max-width:1256px;margin:120px auto 0;min-height:64svh;position:relative;padding:9svh 32px 0}
+.cierre h2{color:#fff;font-size:clamp(48px,8vw,140px);letter-spacing:-0.04em;line-height:.92}
+.cierre .base{position:absolute;left:32px;right:32px;bottom:36px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.cierre .base p{font-size:19px;max-width:34ch}
+.cierre .btn{font-size:19px;min-height:56px;padding:0 34px}
+
+/* ====== footer ====== */
+.foot{background:var(--oscuro);color:var(--oscuro-ink);padding:90px var(--m) 32px;margin-top:120px}
+.foot-inner{max-width:1256px;margin:0 auto}
+.foot .marca-xl{display:flex;align-items:center;gap:.2em;font-weight:900;font-size:clamp(54px,9vw,150px);letter-spacing:-0.04em;line-height:.9;color:#fff}
+.foot .marca-xl img{width:.7em;height:.7em}
+.foot .fila{display:grid;grid-template-columns:5fr 1fr 6fr;margin-top:64px}
+.foot .lugares{display:grid;gap:10px}
+.foot .lugares a{font-size:clamp(22px,2vw,30px);font-weight:700;color:#fff;text-decoration:none}
+.foot .lugares a:hover{text-decoration:underline}
+.foot .chicos{columns:2;column-gap:24px;font-size:15px}
+.foot .chicos p{break-inside:avoid;margin-bottom:18px;color:#cfe8e6;line-height:1.6}
+.foot .chicos a{color:#fff}
+.foot .legal{display:flex;justify-content:space-between;gap:16px;margin-top:80px;font-size:13px;color:#a9d2d0}
+.foot .legal a{color:#a9d2d0}
+
+@media (max-width:900px){
+  .header nav{display:none}
+  .header .marca small{display:none}
+  .mast{height:40svh;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px 12px 0}
+  .mast .solo-desk{display:none}
+  .mast .span2r{grid-row:auto}
+  .portada{padding:36px var(--m) 64px;display:flex;flex-direction:column}
+  .portada .standfirst{position:static;max-width:none;margin-top:18px;order:2}
+  .portada h1{margin-left:0;font-size:13vw;order:1}
+  .portada .baja{margin-left:0;order:3;font-size:18px}
+  .board-grid{grid-template-columns:repeat(3,1fr);gap:6px}
+  .board-grid .cel{background-size:300% 600%}
+  .board-grid .flat.heading{grid-column:span 2;font-size:6vw}
+  .board-grid .flat.dato span{font-size:14px}
+  .nombres{grid-template-columns:1fr;gap:32px;padding:76px var(--m)}
+  .cols{columns:2;column-gap:20px}
+  .cols .kind b{font-size:17px}
+  .cols .kind > span{font-size:15px}
+  .mosaico{padding:0 12px 84px}
+  .mz{grid-template-columns:repeat(2,1fr);grid-auto-rows:auto;gap:6px}
+  .mz .t-head,.mz .t-video,.mz .t-frase{grid-column:span 2;grid-row:auto}
+  .mz .t-video{aspect-ratio:16/10}
+  .mz .t-fig,.mz .t-lista{grid-column:span 1;grid-row:auto;aspect-ratio:1}
+  .mz .t-fig b{font-size:11vw}
+  .mz .t-lista p{font-size:14.5px}
+  .prov .zona{grid-template-columns:1fr;gap:20px}
+  .tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+  .tabs button{width:100%}
+  .bandas .banda{grid-template-columns:1fr;gap:4px;padding:16px}
+  .faq h2{min-height:26svh;font-size:11vw}
+  .faq .banda{grid-template-columns:1fr;gap:12px;padding:28px 18px}
+  .faq .banda h3{font-size:22px}
+  .faq .banda p{font-size:17px}
+  .cierre{margin:84px 12px 0;min-height:62svh;padding:8svh 18px 0}
+  .cierre h2{font-size:13vw}
+  .cierre .base{left:18px;right:18px;flex-direction:column;align-items:stretch}
+  .cierre .btn{width:100%}
+  .foot{margin-top:84px}
+  .foot .fila{grid-template-columns:1fr;gap:40px}
+  .foot .legal{flex-direction:column}
+  .fab{width:56px;height:56px}
+}
+</style>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true"><defs><symbol id="wa" viewBox="0 0 32 32"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.5.7 4.9 2 7L2.7 29.3l6.6-2c2 1.1 4.3 1.7 6.7 1.7 7.3 0 13.2-5.9 13.2-13.2S23.3 2.7 16 2.7zm0 24c-2.2 0-4.3-.6-6.1-1.7l-.4-.3-3.9 1.2 1.2-3.8-.3-.4c-1.2-1.9-1.9-4.1-1.9-6.3C4.6 9.6 9.7 4.5 16 4.5s11.4 5.1 11.4 11.4S22.3 26.7 16 26.7zm6.3-8.5c-.3-.2-2-1-2.4-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2.1-.4 0-.6-.1-.2-.8-1.9-1-2.6-.3-.6-.6-.5-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></symbol></defs></svg>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <a class="marca" href="#"><img src="logo-arbol.png" alt="Logo árbol de Premedic" width="40" height="40"><span>Premedic<small>Agencia Comercial Oficial</small></span></a>
+  <nav aria-label="Secciones">
+    <a href="#cartilla">La cartilla</a>
+    <a href="#centros">Centros</a>
+    <a href="#zonas">Zonas</a>
+  </nav>
+  <a class="btn btn-wa" href="https://wa.me/5491126190219?text=Hola!%20Quiero%20la%20cartilla%20de%20Premedic%20de%20mi%20zona"><svg><use href="#wa"/></svg>Pedir cartilla</a>
+</header>
+
+<!-- ============ MASTHEAD ============ -->
+<div class="mast" aria-label="Mosaico con videos y fachadas de la cartilla de Premedic">
+  <div class="span2c"><video autoplay muted loop playsinline preload="metadata" poster="v23072.jpg" aria-label="Video institucional de Premedic"><source src="video-institucional-1.mp4" type="video/mp4"></video></div>
+  <div class="t-panel solo-desk"></div>
+  <div class="kb"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Hospital_Brit%C3%A1nico_Central_%28fachada%29.jpg/960px-Hospital_Brit%C3%A1nico_Central_%28fachada%29.jpg" width="960" height="640" alt="Fachada del Hospital Británico de Buenos Aires"></div>
+  <div class="t-verde solo-desk"></div>
+  <div class="t-lito span2r"><img src="logo-arbol.png" alt="" aria-hidden="true" width="256" height="256"></div>
+  <div class="t-accent solo-desk"></div>
+  <div class="kb"><img src="v23072.jpg" width="640" height="360" alt="Familia jugando con su perro en el jardín" loading="lazy" style="object-position:35% center"></div>
+  <div class="t-panel solo-desk"></div>
+  <div class="span2c kb"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/193_-_Buenos_Aires_-_Puerto_Madero_-_Janvier_2010.jpg/1280px-193_-_Buenos_Aires_-_Puerto_Madero_-_Janvier_2010.jpg" width="1280" height="325" alt="Panorámica de Puerto Madero, Buenos Aires" loading="lazy"></div>
+</div>
+
+<!-- ============ PORTADA ============ -->
+<section class="portada">
+  <p class="standfirst">La cartilla de Premedic Medicina Privada, abierta: sanatorios de primera línea, centros propios y un médico en el celular a cualquier hora.</p>
+  <h1><span class="ln"><span>Dónde te</span></span><span class="ln"><span>atendés</span></span></h1>
+  <div class="baja">
+    <p>Antes de elegir una prepaga, mirá a dónde vas a ir cuando la necesites. Acá está, con nombre y apellido.</p>
+    <a class="btn btn-wa" href="https://wa.me/5491126190219?text=Hola!%20Quiero%20la%20cartilla%20de%20Premedic%20de%20mi%20zona"><svg><use href="#wa"/></svg>Pedir la cartilla de mi zona</a>
+  </div>
+</section>
+
+<!-- ============ LA CARTILLA EN NÚMEROS (board) ============ -->
+<section class="board rv" aria-label="La red en números">
+  <h2>La red en números</h2>
+  <div class="board-grid" id="board" style="--foto:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Buenos_Aires_skyline_%2840896504682%29.jpg/1280px-Buenos_Aires_skyline_%2840896504682%29.jpg')"></div>
+</section>
+
+<!-- ============ NOMBRES EN COLUMNAS ============ -->
+<section class="nombres" id="cartilla">
+  <div class="lado rv">
+    <h2>Nombres propios</h2>
+    <p>Prestadores destacados según el plan. La cartilla completa de tu zona te la manda la asesora por WhatsApp.</p>
+    <div class="filtros" role="group" aria-label="Ver cartilla según plan">
+      <button aria-pressed="true" data-plan="todos">Todos</button>
+      <button aria-pressed="false" data-plan="p3">Plan 300</button>
+      <button aria-pressed="false" data-plan="p4">Plan 400</button>
+    </div>
+  </div>
+  <div class="cols rv" id="lista-nombres">
+    <div class="kind"><span>Suma el plan 300</span>
+      <b data-p="p3">Sanatorio de la Trinidad</b>
+      <b data-p="p3">Sanatorio Finochietto</b>
+      <b data-p="p3">Sanatorio Las Lomas</b>
+      <b data-p="p3">Clínica Bazterrica</b>
+      <b data-p="p3">CEMIC</b>
+    </div>
+    <div class="kind"><span>Suma el plan 400</span>
+      <b data-p="p4">Hospital Británico</b>
+      <b data-p="p4">Hospital Alemán</b>
+      <b data-p="p4">ICBA <em>Instituto Cardiovascular</em></b>
+      <b data-p="p4">Sanatorio San Lucas</b>
+      <b data-p="p4">Clínica Angelus</b>
+    </div>
+    <div class="kind"><span>Centros propios, todos los planes</span>
+      <b>Premedic Medical Center</b>
+      <b>Smile Group <em>odontología</em></b>
+      <b>Multidiagnóstico <em>imágenes</em></b>
+      <b>PMC Virtual <em>videoconsultas</em></b>
+    </div>
+    <div class="kind"><span>Y en toda la red</span>
+      <b>+100 clínicas y sanatorios</b>
+      <b>+400 centros médicos</b>
+      <b>+2.500 profesionales</b>
+      <b>+160 ópticas</b>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CENTROS PROPIOS (mosaico) ============ -->
+<section class="mosaico" id="centros">
+  <div class="mz">
+    <div class="tile t-head rv"><h2>Centros propios</h2><p>Atención en centros de Premedic, con turnos y credencial desde la app.</p></div>
+    <div class="t-video rv"><video autoplay muted loop playsinline preload="metadata" poster="v4834.jpg" aria-label="Video de los centros y servicios de Premedic"><source src="video-institucional-2.mp4" type="video/mp4"></video></div>
+    <div class="tile t-fig rv"><b>48 h</b><span>anteojos listos en los centros PMC</span></div>
+    <div class="tile t-lista rv"><p>PMC · consultas sin coseguro<br>Smile Group · odontología<br>Multidiagnóstico · desde 2007<br>Vacunación a domicilio</p></div>
+    <div class="tile t-frase rv"><p>Médico por chat o videollamada las 24 h, los 365 días, sin cargo.</p></div>
+    <div class="tile t-frase inv rv"><p>Credencial virtual en la app: sin tarjeta física, con turnos y autorizaciones.</p></div>
+  </div>
+</section>
+
+<!-- ============ ZONAS ============ -->
+<section class="prov" id="zonas">
+  <div class="cab rv">
+    <h2><span class="suave">Cinco provincias,</span>una misma cobertura</h2>
+    <a class="btn btn-wa" href="https://wa.me/5491126190219?text=Hola!%20Quiero%20la%20cartilla%20de%20Premedic%20de%20mi%20zona"><svg><use href="#wa"/></svg>Pedir la de mi zona</a>
+  </div>
+  <div class="zona rv">
+    <div class="tabs" role="tablist" aria-label="Elegir zona" id="tabs-zona"></div>
+    <div class="bandas" id="bandas-zona" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" aria-label="Preguntas frecuentes">
+  <h2>Las preguntas de siempre</h2>
+  <div class="banda rv"><h3>¿La cartilla depende del plan?</h3><div></div><p>Sí. Todos los planes acceden a la red de centros médicos y clínicas; el 300 suma Trinidad, Finochietto, Las Lomas, Bazterrica y CEMIC, y el 400 suma Británico, Alemán, ICBA, San Lucas y Angelus.</p></div>
+  <div class="banda rv"><h3>¿Necesito la credencial física?</h3><div></div><p>No. La credencial virtual vive en la app Premedic Móvil y vale en todos los prestadores. Desde la misma app pedís turnos y autorizás órdenes con seguimiento en tiempo real.</p></div>
+  <div class="banda rv"><h3>¿Y si me enfermo a las 3 de la mañana?</h3><div></div><p>Médico por chat o videollamada las 24 horas, los 365 días, sin cargo: consultás y recibís las órdenes en el celular. Y si viajás, Cardinal Assistance te cubre en el país y países limítrofes.</p></div>
+  <div class="banda rv"><h3>¿Cómo consigo la cartilla completa?</h3><div></div><p>Escribinos por WhatsApp con tu localidad: una asesora te manda la cartilla de tu zona junto con el precio de cada plan para tu grupo familiar. Sin formularios ni llamadas.</p></div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="cierre">
+  <h2 class="rv">Tu cartilla,<br>al chat</h2>
+  <div class="base">
+    <p>Decinos tu localidad y te mandamos la cartilla de tu zona con la cotización de cada plan. Responde una persona del equipo, hoy.</p>
+    <a class="btn btn-wa" href="https://wa.me/5491126190219?text=Hola!%20Quiero%20la%20cartilla%20de%20Premedic%20de%20mi%20zona%20y%20cotizar"><svg><use href="#wa"/></svg>Pedir cartilla y precio</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="foot-inner">
+    <p class="marca-xl" aria-hidden="true"><img src="logo-arbol.png" alt="">Premedic</p>
+    <div class="fila">
+      <div class="lugares">
+        <a href="https://wa.me/5491126190219">WhatsApp 11 2619-0219</a>
+        <a href="https://planespremedic.com.ar">planespremedic.com.ar</a>
+      </div>
+      <div></div>
+      <div class="chicos">
+        <p>Agencia Comercial Oficial de Grupo Premedic. Asesoramos, cotizamos y gestionamos la afiliación 100% online.</p>
+        <p>Zonas con cartilla: CABA, provincia de Buenos Aires, Córdoba, Tucumán, Misiones y Mendoza.</p>
+        <p>Videos: Grupo Premedic. Fotos de fachadas y ciudad: <a href="https://commons.wikimedia.org/wiki/File:Hospital_Brit%C3%A1nico_Central_(fachada).jpg">Hospital Británico (CC BY 3.0)</a>, <a href="https://commons.wikimedia.org/wiki/File:193_-_Buenos_Aires_-_Puerto_Madero_-_Janvier_2010.jpg">Puerto Madero por Martin St-Amant (CC BY-SA 3.0)</a>, <a href="https://commons.wikimedia.org/wiki/File:Buenos_Aires_skyline_(40896504682).jpg">Buenos Aires por Deensel (CC BY 2.0)</a>, vía Wikimedia Commons.</p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Agencia Comercial Oficial Premedic · Superintendencia de Servicios de Salud 0800-222-SALUD (72583) · RNEMP Nº 112172</span>
+      <a href="#top" onclick="scrollTo({top:0,behavior:'smooth'});return false">Volver arriba</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5491126190219?text=Hola!%20Quiero%20la%20cartilla%20de%20Premedic%20de%20mi%20zona" aria-label="Escribinos por WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+// Reveals
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// Board: una foto cortada en tiles (6x4), 5 planas
+(function(){
+  const g=document.getElementById('board');
+  const movil=matchMedia('(max-width:900px)').matches;
+  const C=movil?3:6,R=movil?6:4;
+  const planas={};
+  if(movil){planas['0']='h';planas['4']='d1';planas['8']='d2';planas['13']='d3';planas['16']='a';}
+  else{planas['1']='h';planas['9']='d1';planas['14']='d2';planas['16']='d3';planas['22']='a';}
+  const defs={
+    h:'<div class="flat heading">La red,<br>en números</div>',
+    d1:'<div class="flat dato"><b>+100</b><span>clínicas y sanatorios con internación cubierta</span></div>',
+    d2:'<div class="flat dato"><b>+400</b><span>centros médicos, todas las especialidades</span></div>',
+    d3:'<div class="flat dato"><b>+2.500</b><span>profesionales de acceso directo</span></div>',
+    a:'<div class="flat accion"><a href="https://wa.me/5491126190219?text=Hola!%20Quiero%20la%20cartilla%20de%20Premedic%20de%20mi%20zona">Pedir la cartilla completa →</a></div>'
+  };
+  let html='';
+  for(let i=0;i<C*R;i++){
+    if(planas[i]!==undefined){html+=defs[planas[i]];continue;}
+    const c=i%C,f=Math.floor(i/C);
+    html+=`<div class="cel" style="background-position:${C>1?(c/(C-1)*100):0}% ${R>1?(f/(R-1)*100):0}%"></div>`;
+  }
+  g.innerHTML=html;
+  if(movil)g.querySelector('.heading').style.gridColumn='span 2';
+})();
+
+// Filtro de nombres por plan
+(function(){
+  const botones=document.querySelectorAll('.filtros button');
+  const items=document.querySelectorAll('#lista-nombres b');
+  botones.forEach(b=>b.addEventListener('click',()=>{
+    botones.forEach(x=>x.setAttribute('aria-pressed','false'));
+    b.setAttribute('aria-pressed','true');
+    const plan=b.dataset.plan;
+    items.forEach(i=>{
+      const p=i.dataset.p;
+      const visible=plan==='todos'||!p||p===plan||(plan==='p4'&&p==='p3');
+      i.classList.toggle('off',!visible);
+    });
+  }));
+})();
+
+// Zonas: tabs + bandas
+(function(){
+  const datos={
+    'CABA':{sub:'y alrededores',bandas:[
+      ['Cartilla completa','Clínicas, sanatorios y centros médicos de la red, según tu plan.'],
+      ['Centros propios','Premedic Medical Center, Smile Group y Multidiagnóstico.'],
+      ['Amar Mascotas','Veterinaria a domicilio y online incluida, sin costo adicional.']]},
+    'Buenos Aires':{sub:'provincia',bandas:[
+      ['Cartilla completa','Prestadores en los principales partidos de la provincia.'],
+      ['Sedes propias','Lomas de Zamora, Quilmes y Vicente López, entre otras.'],
+      ['Amar Mascotas','Incluida en AMBA, sin costo adicional.']]},
+    'Córdoba':{sub:'',bandas:[
+      ['Cartilla en la zona','Clínicas y centros médicos de la red en Córdoba.'],
+      ['Amar Mascotas','Incluida también en Córdoba.']]},
+    'Tucumán':{sub:'',bandas:[
+      ['Cartilla en la zona','Clínicas y centros médicos de la red en Tucumán.'],
+      ['Sede nueva','Premedic abrió una nueva sede en Tucumán.']]},
+    'Misiones':{sub:'',bandas:[
+      ['Cartilla en la zona','Clínicas y centros médicos de la red en Misiones.'],
+      ['Sede Posadas','Una de las sedes más recientes de Premedic.']]},
+    'Mendoza':{sub:'',bandas:[
+      ['Cartilla en la zona','Clínicas y centros médicos de la red en Mendoza.'],
+      ['Sede propia','Sede reciente de Premedic en Mendoza.'],
+      ['Amar Mascotas','Incluida también en Mendoza.']]}
+  };
+  const tabs=document.getElementById('tabs-zona'),bandas=document.getElementById('bandas-zona');
+  Object.keys(datos).forEach((z,i)=>{
+    const b=document.createElement('button');
+    b.setAttribute('role','tab');b.setAttribute('aria-selected',i===0?'true':'false');
+    b.innerHTML=z+(datos[z].sub?'<small>'+datos[z].sub+'</small>':'<small>&nbsp;</small>');
+    b.addEventListener('click',()=>{tabs.querySelectorAll('button').forEach(x=>x.setAttribute('aria-selected','false'));b.setAttribute('aria-selected','true');pinta(z)});
+    tabs.appendChild(b);
+  });
+  function pinta(z){
+    bandas.innerHTML=datos[z].bandas.map(([t,d])=>`<div class="banda"><b>${t}</b><p>${d}</p></div>`).join('');
+    bandas.innerHTML+=`<div class="banda"><b>La completa</b><p><a href="https://wa.me/5491126190219?text=${encodeURIComponent('Hola! Quiero la cartilla de Premedic de '+z)}">Pedir la cartilla de ${z} por WhatsApp →</a></p></div>`;
+  }
+  pinta('CABA');
+})();
+</script>
+</body>
+</html>
