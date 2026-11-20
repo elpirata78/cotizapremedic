@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://api.fontshare.com; font-src https://cdn.fontshare.com; img-src 'self' https://upload.wikimedia.org; media-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Cotizá tu plan Premedic: mirá dónde te atendés antes de elegir</title>
-<meta name="description" content="Cotizá Premedic por WhatsApp y mirá antes dónde te atendés: más de 100 clínicas y sanatorios, 400 centros médicos y 2.500 profesionales en CABA, Buenos Aires, Córdoba, Tucumán, Misiones y Mendoza. Una asesora te pasa el precio en minutos.">
+<meta name="description" content="Cotizá Premedic por WhatsApp y mirá antes dónde te atendés: más de 100 clínicas y sanatorios, 400 centros médicos y 2.500 profesionales en CABA, Buenos Aires, Córdoba, Tucumán, Misiones, Mendoza y San Juan. Una asesora te pasa el precio en minutos.">
 <link rel="canonical" href="https://cotizapremedic.com.ar/">
 <link rel="icon" type="image/png" href="logo-arbol.png">
 <link rel="apple-touch-icon" href="logo-arbol.png">
@@ -37,7 +37,7 @@
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "¿La cartilla de Premedic depende del plan?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Todos los planes acceden a la red de centros médicos y clínicas; el plan 300 suma prestadores como Sanatorio de la Trinidad, Finochietto, Las Lomas, Bazterrica y CEMIC, y el 400 suma Hospital Británico, Hospital Alemán, ICBA, Sanatorio San Lucas y Clínica Angelus."}},
-    {"@type": "Question", "name": "¿En qué provincias tiene cartilla Premedic?", "acceptedAnswer": {"@type": "Answer", "text": "En CABA, provincia de Buenos Aires, Córdoba, Tucumán, Misiones y Mendoza."}},
+    {"@type": "Question", "name": "¿En qué provincias tiene cartilla Premedic?", "acceptedAnswer": {"@type": "Answer", "text": "En CABA, provincia de Buenos Aires, Córdoba, Tucumán, Misiones, Mendoza y, desde noviembre de 2026, San Juan."}},
     {"@type": "Question", "name": "¿Necesito credencial física para atenderme?", "acceptedAnswer": {"@type": "Answer", "text": "No. La app Premedic Móvil tiene la credencial virtual: con ella te atendés en todos los prestadores, pedís turnos y autorizás órdenes."}},
     {"@type": "Question", "name": "¿Qué pasa si me enfermo de madrugada o de viaje?", "acceptedAnswer": {"@type": "Answer", "text": "Tenés médico por chat o videollamada las 24 horas, los 365 días, sin cargo, y asistencia al viajero de Cardinal Assistance en el país y países limítrofes."}},
     {"@type": "Question", "name": "¿Cómo cotizo mi plan y veo los prestadores de mi zona?", "acceptedAnswer": {"@type": "Answer", "text": "Escribinos por WhatsApp con tu localidad y una asesora te pasa el precio de cada plan para tu grupo familiar y los prestadores de tu zona, en minutos."}}
@@ -481,7 +481,11 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
     'Mendoza':{sub:'',bandas:[
       ['Cartilla en la zona','Clínicas y centros médicos de la red en Mendoza.'],
       ['Sede propia','Sede reciente de Premedic en Mendoza.'],
-      ['Amar Mascotas','Incluida también en Mendoza.']]}
+      ['Amar Mascotas','Incluida también en Mendoza.']]},
+    'San Juan':{sub:'¡nueva!',bandas:[
+      ['Cartilla en la zona','Clínicas, sanatorios y especialistas de la red en San Juan capital.'],
+      ['Lanzamiento','Premedic llegó a San Juan: 25% de descuento de por vida para los nuevos afiliados.'],
+      ['Sede propia','En diciembre de 2026 abre el centro médico propio (PMC y Smile Group) en General Paz 320 Este.']]}
   };
   const tabs=document.getElementById('tabs-zona'),bandas=document.getElementById('bandas-zona');
   Object.keys(datos).forEach((z,i)=>{
